@@ -2,13 +2,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kishan Kumar | Portfolio</title>
-    <link rel="stylesheet" href="style.css" class="css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Kishan Kumar - Computer Science student, Java Developer and Data Science enthusiast. Explore my projects, skills and experience.">
+
+    <meta name="keywords"
+          content="Kishan Kumar, Java Developer, Data Science, Computer Science, Python, SQL, Web Development">
+
+    <meta name="author"
+          content="Kishan Kumar">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <title>Kishan Kumar | Java Developer & Data Science Enthusiast</title>
+
+    <!-- Open Graph / Social Media Preview -->
+<meta property="og:title" content="Kishan Kumar | Java Developer & Data Science Enthusiast">
+
+<meta property="og:description" content="Explore Kishan Kumar's portfolio, projects, skills and experience in Java Development and Data Science.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="images/portfolio-preview.png">
+
+<meta property="og:url" content="YOUR_PORTFOLIO_URL">
+
+<!-- Mobile Browser -->
+<meta name="theme-color" content="#020617">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-
+    <!-- =========================================
+     BACK TO TOP BUTTON
+========================================= -->
+<button id="backToTop" title="Back to Top">
+    ↑
+</button>
 <nav>
     <div class="logo">Kishan Kumar</div>
 
@@ -26,37 +66,34 @@
 </nav>
     <section id="home" class="hero">
 
-        <div class="hero-image">
-        <img src="images/profile.jpg" alt="Kishan Kumar">
-        </div>
+    <div class="hero-content">
 
-        <div class="hero_contect">
-            <p>Hello, i'm</p>
-            <h1>Kishan Kumar</h1>
-            <h2>CSE Student | Java Developer | Data Science Enthusiast</h2>
-             <p class="description">
-            I am a Computer Science and Engineering student passionate about
-            Java development, Data Science, and building real-world projects.
+        <p class="hero-intro">Hello, I'm</p>
+
+        <h1>Kishan Kumar</h1>
+
+        <h2>Java Developer & Data Science Enthusiast</h2>
+
+        <p class="hero-description">
+            I am a Computer Science student passionate about
+            Java development, Data Science and building useful
+            software projects.
         </p>
 
         <div class="hero-buttons">
             <a href="#projects" class="btn">View Projects</a>
-            <a href="image/resume.pdf" class="btn" target="_blank">Download Resume</a>
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
-        <div class="social-links">
-             <a href="https://github.com/Erkishankumar9838" target="_blank"> 
-                <!--<a href="YOUR_PROJECT_GITHUB_URL"class="btn" target="_blank">
-                GitHub
-                </a>-->
-                GitHub</a>
-             <a href="https://www.linkedin.com/in/kishan-kumar-800a60328/" target="_blank">  LinkedIn</a>
+
+            <a href="image/resume.pdf" class="btn resume-btn" target="_blank">
+                View Resume
+            </a>
+             <a href="#contact" class="btn resume-btn">
+                Contact Me
+                  </a>
         </div>
 
     </div>
-        </div>
 
-    </section>
+</section>
     <section id="about" class="about">
 
     <div class="section-title">
@@ -147,20 +184,27 @@
 
     <div class="section-title">
         <h2>My Projects</h2>
-        <p>Some of my recent work</p>
+        <p>Some things I have built</p>
     </div>
 
     <div class="projects-container">
 
-        <!-- Project 1 -->
+        <!-- Project 01 -->
         <div class="project-card">
 
+            <div class="project-number">01</div>
+            <div class="project-preview">
+             <span>Java Web Application</span>
+            </div>
             <div class="project-content">
+
                 <h3>Online Examination System</h3>
 
                 <p>
-                    A web-based online examination system where students
-                    can register, login, and participate in online exams.
+                    A web-based examination system where students can
+                    register, login and participate in online exams.
+                    The system manages student data and examination
+                    information using a database.
                 </p>
 
                 <div class="project-tech">
@@ -174,22 +218,30 @@
 
                 <div class="project-buttons">
                     <a href="#" class="btn">GitHub</a>
-                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn project-demo">Live Demo</a>
                 </div>
+
             </div>
 
         </div>
 
 
-        <!-- Project 2 -->
+        <!-- Project 02 -->
         <div class="project-card">
 
+            <div class="project-number">02</div>
+            <div class="project-preview">
+            <span>Python Data Analysis</span>
+            </div>
+            
             <div class="project-content">
-                <h3>Data Science Project</h3>
+
+                <h3>Data Science Analysis</h3>
 
                 <p>
-                    A data analysis project using Python, NumPy, Pandas
-                    and Matplotlib to explore and visualize datasets.
+                    A data analysis project using Python to explore,
+                    clean and visualize datasets. The project focuses
+                    on extracting useful insights from data.
                 </p>
 
                 <div class="project-tech">
@@ -197,17 +249,20 @@
                     <span>NumPy</span>
                     <span>Pandas</span>
                     <span>Matplotlib</span>
+                    <span>EDA</span>
                 </div>
 
                 <div class="project-buttons">
                     <a href="#" class="btn">GitHub</a>
-                    <a href="#" class="btn">View Project</a>
+                    <a href="#" class="btn project-demo">View Project</a>
                 </div>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
     <section id="contact" class="contact">
@@ -219,6 +274,7 @@
 
     <div class="contact-container">
 
+        <!-- Contact Information -->
         <div class="contact-info">
 
             <h3>Get In Touch</h3>
@@ -229,25 +285,91 @@
             </p>
 
             <div class="contact-item">
-                <strong>Email:</strong>
-                <a href="mailto:your-email@gmail.com">
-                    kishanprasad010103@gmail.com
-                </a>
+                <span class="contact-icon">✉</span>
+
+                <div>
+                    <strong>Email</strong>
+                    <a href="mailto:kishanprasad010103@gmail.com">
+                        kishanprasad010103@gmail.com
+                    </a>
+                </div>
             </div>
 
             <div class="contact-item">
-                <strong>GitHub:</strong>
-                <a href="#" target="_blank">
+                <span class="contact-icon">⌘</span>
+
+                <div>
+                    <strong>GitHub</strong>
+                    <a href="https://github.com/Erkishankumar9838"
+                    target="_blank">
                     GitHub Profile
-                </a>
+                    </a>
+                </div>
             </div>
 
             <div class="contact-item">
-                <strong>LinkedIn:</strong>
-                <a href="#" target="_blank">
-                    LinkedIn Profile
-                </a>
+                <span class="contact-icon">in</span>
+
+                <div>
+                    <strong>LinkedIn</strong>
+                    <a href="https://www.linkedin.com/in/kishan-kumar-800a60328/"
+                     target="_blank">
+                      LinkedIn Profile
+                    </a>
+                </div>
             </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+
+            <h3>Send Me a Message</h3>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message..."
+                    ></textarea>
+                </div>
+
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
 
         </div>
 
@@ -262,6 +384,7 @@
     <footer>
     <p>© 2026 Kishan Kumar. All Rights Reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 
 </body>
