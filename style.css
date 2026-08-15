@@ -68,13 +68,20 @@ nav {
 }
 
 .logo {
-    font-size: 23px;
-    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-    background: linear-gradient(135deg, #7c3aed, #ec4899);
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.logo span {
+    font-size: 22px;
+    font-weight: 700;
 }
 
 nav ul {
@@ -278,15 +285,12 @@ nav ul li a.active::after {
 .image-circle {
     width: 360px;
     height: 430px;
-
     padding: 8px;
-
-    border-radius: 50%;
-
+    border-radius: 30%;
     background: linear-gradient(
         135deg,
-        #beb6cc,
-        #d2c1c9
+        #7c3aed,
+        #c026d3
     );
 
     box-shadow:
@@ -310,7 +314,7 @@ nav ul li a.active::after {
 
     object-fit: cover;
 
-    border-radius: 50%;
+    border-radius: 30%;
 
     border: 7px solid #ffffff;
 }
@@ -449,21 +453,20 @@ nav ul li a.active::after {
 }
 
 .about-text {
+
     padding: 35px;
 }
 
 .about-text h3 {
     font-size: 28px;
-
     margin-bottom: 18px;
-
     background: linear-gradient(
         135deg,
         #7c3aed,
         #ec4899
     );
 
-    --webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
